@@ -13,7 +13,8 @@ import {
   Github,
   Linkedin,
   Twitter,
-  Globe
+  Globe,
+  Laptop
 } from 'lucide-react';
 
 export default function About() {
@@ -152,11 +153,48 @@ export default function About() {
                   <a href="https://leetcode.com/u/himanshuraj48512/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
                     <GraduationCap className="w-5 h-5" />
                   </a>
-                  <a href="https://himanshuraj.portfolio.dev" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <a href="/tool/portfolio" className="text-gray-400 hover:text-blue-400 transition-colors">
                     <Globe className="w-5 h-5" />
                   </a>
                   <a href="mailto:example@example.com@example.com" className="text-gray-400 hover:text-blue-400 transition-colors">
                     <Mail className="w-5 h-5" />
+                  </a>
+                </div>
+                
+                {/* Advanced Portfolio Button */}
+                <div className="mt-6">
+                  <a 
+                    href="/tool/portfolio" 
+                    className="portfolio-button group relative block w-full overflow-hidden rounded-lg bg-gradient-to-br from-blue-600 to-purple-600 p-px text-center"
+                  >
+                    {/* Glow effect */}
+                    <span className="absolute inset-0 h-full w-full bg-gradient-to-br from-blue-600 to-purple-600 opacity-70 blur-2xl transition-all duration-500 group-hover:opacity-100 group-hover:blur-3xl"></span>
+                    
+                    {/* Button content */}
+                    <span className="relative flex items-center justify-center rounded-lg bg-gray-900 py-3 px-4 transition-all duration-300 group-hover:bg-opacity-0">
+                      <span className="mr-3 relative">
+                        <Laptop className="w-5 h-5 transition-all duration-300 group-hover:scale-110" />
+                        {/* Mini particles around icon */}
+                        <span className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-blue-400 opacity-0 group-hover:animate-ping group-hover:opacity-60"></span>
+                        <span className="absolute -bottom-1 -left-1 h-2 w-2 rounded-full bg-purple-400 opacity-0 group-hover:animate-ping group-hover:opacity-60" style={{ animationDelay: '0.5s' }}></span>
+                      </span>
+                      <span className="font-medium text-white transition-all duration-300 group-hover:text-lg">
+                        View My Portfolio
+                      </span>
+                      <span className="ml-3 opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100">→</span>
+                    </span>
+                    
+                    {/* Bottom swipe effect */}
+                    <span className="absolute -bottom-2 left-1/2 h-12 w-12 -translate-x-1/2 rounded-full bg-blue-500/20 transition-all duration-500 group-hover:scale-[12]"></span>
+                    
+                    {/* Border animation */}
+                    <span className="absolute inset-0 rounded-lg border border-white/10 group-hover:border-white/20 transition-all duration-500"></span>
+                    
+                    {/* Floating dots */}
+                    <span className="absolute top-0 left-0 h-2 w-2 rounded-full bg-blue-300/40 opacity-0 group-hover:opacity-100 group-hover:animate-float" style={{ animationDelay: '0.1s' }}></span>
+                    <span className="absolute top-1/4 right-1/4 h-1 w-1 rounded-full bg-purple-300/40 opacity-0 group-hover:opacity-100 group-hover:animate-float" style={{ animationDelay: '0.3s' }}></span>
+                    <span className="absolute bottom-1/4 left-1/3 h-1.5 w-1.5 rounded-full bg-blue-300/40 opacity-0 group-hover:opacity-100 group-hover:animate-float" style={{ animationDelay: '0.5s' }}></span>
+                    <span className="absolute bottom-0 right-0 h-2 w-2 rounded-full bg-purple-300/40 opacity-0 group-hover:opacity-100 group-hover:animate-float" style={{ animationDelay: '0.7s' }}></span>
                   </a>
                 </div>
               </div>
