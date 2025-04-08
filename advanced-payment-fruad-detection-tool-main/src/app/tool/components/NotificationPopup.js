@@ -12,7 +12,7 @@ export default function NotificationPopup({ message, onClose }) {
     }, 5000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [handleClose]);
 
   const handleClose = () => {
     setIsVisible(false);

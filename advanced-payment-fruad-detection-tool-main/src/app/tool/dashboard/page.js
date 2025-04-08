@@ -328,8 +328,6 @@ export default function Dashboard() {
     const [count, setCount] = useState(0);
     
     useEffect(() => {
-      if (isLoading) return;
-      
       let start = 0;
       const end = parseInt(value);
       const incrementTime = (duration / end) * 1.5;
@@ -342,7 +340,7 @@ export default function Dashboard() {
       return () => {
         clearInterval(timer);
       };
-    }, [value, duration, isLoading]);
+    }, [value, duration]);
     
     return <>{count}</>;
   };

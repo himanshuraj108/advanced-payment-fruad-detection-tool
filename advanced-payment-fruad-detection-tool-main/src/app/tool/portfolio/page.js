@@ -319,7 +319,7 @@ export default function Portfolio() {
               </h3>
               
               <p className="text-gray-300 mb-6 leading-relaxed">
-                I specialize in developing sophisticated AI solutions that push the boundaries of what's possible. My expertise spans across
+                I specialize in developing sophisticated AI solutions that push the boundaries of what&apos;s possible. My expertise spans across
                 multiple domains of artificial intelligence, from neural networks to natural language processing.
               </p>
               

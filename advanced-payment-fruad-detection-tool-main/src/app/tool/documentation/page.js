@@ -215,9 +215,9 @@ export default function Documentation() {
                     Our system automatically tries to identify important columns based on common naming patterns:
                   </p>
                   <ul className="space-y-2 text-gray-300">
-                    <li>• <strong>Amount:</strong> Will match columns with names like "amount", "sum", "total", "price", etc.</li>
-                    <li>• <strong>Transaction ID:</strong> Will match columns like "id", "transaction", "txn", "number", etc.</li>
-                    <li>• <strong>Date:</strong> Will match columns like "date", "time", "timestamp", etc.</li>
+                    <li>• <strong>Amount:</strong> Will match columns with names like &quot;amount&quot;, &quot;sum&quot;, &quot;total&quot;, &quot;price&quot;, etc.</li>
+                    <li>• <strong>Transaction ID:</strong> Will match columns like &quot;id&quot;, &quot;transaction&quot;, &quot;txn&quot;, &quot;number&quot;, etc.</li>
+                    <li>• <strong>Date:</strong> Will match columns like &quot;date&quot;, &quot;time&quot;, &quot;timestamp&quot;, etc.</li>
                   </ul>
                 </div>
               </div>

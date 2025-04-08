@@ -111,7 +111,7 @@ export default function AnalyticsSection({ results, isLoading }) {
   ];
 
   // Chart colors
-  const chartColors = {
+  const chartColors = useMemo(() => ({
     blue: 'rgba(59, 130, 246, 0.8)',
     lightBlue: 'rgba(96, 165, 250, 0.5)',
     purple: 'rgba(139, 92, 246, 0.8)',
@@ -124,7 +124,7 @@ export default function AnalyticsSection({ results, isLoading }) {
     lightYellow: 'rgba(250, 204, 21, 0.5)',
     background: 'rgba(30, 41, 59, 0.8)',
     grid: 'rgba(148, 163, 184, 0.2)',
-  };
+  }), []);
 
   // Calculate risk score with more realistic distribution
   const calculateRiskScore = useMemo(() => {
