@@ -11,53 +11,182 @@
         padding: 0;
         background-color: #0f172a;
         color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         min-height: 100vh;
         text-align: center;
       }
       .container {
-        max-width: 600px;
-        padding: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #2d3748;
+        margin-bottom: 40px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .logo-icon {
+        background-color: #3b82f6;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+      }
+      nav a {
+        color: #e2e8f0;
+        text-decoration: none;
+        margin-left: 20px;
+        transition: color 0.2s;
+      }
+      nav a:hover {
+        color: #3b82f6;
       }
       h1 {
         color: #3b82f6;
         margin-bottom: 20px;
+        font-size: 42px;
       }
       p {
         margin-bottom: 30px;
         color: #e2e8f0;
         line-height: 1.6;
+        font-size: 18px;
       }
-      a {
+      .cta {
         display: inline-block;
         background-color: #3b82f6;
         color: white;
-        padding: 12px 25px;
+        padding: 15px 30px;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 8px;
         font-weight: 500;
+        font-size: 18px;
         transition: background-color 0.2s;
+        margin-top: 20px;
       }
-      a:hover {
+      .cta:hover {
         background-color: #2563eb;
+      }
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 60px;
+      }
+      .feature {
+        background-color: #1e293b;
+        border-radius: 12px;
+        padding: 30px;
+        width: 300px;
+        text-align: left;
+      }
+      .feature-icon {
+        background-color: rgba(59, 130, 246, 0.1);
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .feature h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: white;
+      }
+      footer {
+        margin-top: 80px;
+        color: #64748b;
+        font-size: 14px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Payment Fraud Detection Tool</h1>
-      <p>Welcome to our advanced fraud detection system for online payments. This tool uses machine learning to identify suspicious transactions with industry-leading accuracy.</p>
-      <a href="/tool">Go to Application</a>
+      <header>
+        <div class="logo">
+          <div class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 7h-9"></path>
+              <path d="M14 17H5"></path>
+              <circle cx="17" cy="17" r="3"></circle>
+              <circle cx="7" cy="7" r="3"></circle>
+            </svg>
+          </div>
+          <span>FraudDetection</span>
+        </div>
+        <nav>
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="https://github.com/himanshuraj108/advanced-payment-fruad-detection-tool" target="_blank">GitHub</a>
+        </nav>
+      </header>
+
+      <main>
+        <h1>Advanced Payment Fraud Detection Tool</h1>
+        <p>
+          Our powerful tool uses machine learning to identify suspicious transactions with industry-leading accuracy.
+          Upload your CSV data and get immediate insights into potential fraudulent activities.
+        </p>
+        <a href="/tool" class="cta">Try the Tool</a>
+
+        <div class="features" id="features">
+          <div class="feature">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l.642.005.642.022.642.05.627.088.608.13.58.17.55.218.51.268.468.314.413.366.353.416.284.466.207.51.127.556.032.596-.032.596-.127.556-.207.51-.284.466-.353.416-.413.366-.468.314-.51.267-.55.22-.58.17-.608.13-.627.088-.642.05-.642-.022L12 2z"></path>
+                <path d="M12 8v4"></path>
+                <path d="M12 16h.01"></path>
+              </svg>
+            </div>
+            <h3>Advanced Detection</h3>
+            <p>State-of-the-art algorithms identify fraudulent transactions with 99.7% accuracy.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="3" y1="15" x2="21" y2="15"></line>
+                <line x1="9" y1="3" x2="9" y2="21"></line>
+                <line x1="15" y1="3" x2="15" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Interactive Dashboard</h3>
+            <p>Visualize fraud patterns and monitor key metrics with our intuitive dashboard.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3>CSV Analysis</h3>
+            <p>Upload your transaction data in CSV format for quick and secure processing.</p>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 Payment Fraud Detection Tool. Created by Himanshu Raj.</p>
+      </footer>
     </div>
-    <script>
-      // Check if we're on the home page, then try to redirect to the Next.js app
-      if (window.location.pathname === '/') {
-        setTimeout(() => {
-          window.location.href = '/tool';
-        }, 500);
-      }
-    </script>
   </body>
 </html> 
